@@ -1,0 +1,103 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.container {
+    /* background-color: grey; */
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+#child1 {
+    flex-basis: 70%;
+    /* background-color: burlywood; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.child1-1 {
+    background-color: cornflowerblue;
+    flex-basis: calc(50% - 3px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.child1-2 {
+    background-color: thistle;
+    flex-basis: calc(50% - 3px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.child1-1 img,
+.child1-2 img {
+    display: none;
+}
+
+.child1-1[type="Paper"] img.paper,
+.child1-2[type="Paper"] img.paper {
+    display: inline-block;
+}
+
+.child1-1[type="Rock"] img.rock,
+.child1-2[type="Rock"] img.rock {
+    display: inline-block;
+}
+
+.child1-1[type="Scissors"] img.scissors,
+.child1-2[type="Scissors"] img.scissors {
+    display: inline-block;
+}
+
+.child1-1,
+.child1-2 {
+    position: relative;
+}
+
+.child1-1 p,
+.child1-2 p {
+    position: absolute;
+    font-weight: 900;
+    font-size: 20px;
+    left: 16px;
+    top: 16px;
+}
+
+#child2 {
+    flex-basis: 30%;
+    /* background-color: coral; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.child2-1 {
+    flex-basis: 33.333%;
+    background-color: darkkhaki;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.child2-2 {
+    flex-basis: 33.333%;
+    background-color: darkslategray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.child2-3 {
+    flex-basis: 33.333%;
+    background-color: darkslateblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
